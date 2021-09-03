@@ -34,7 +34,7 @@ pipeline {
             stage('Build Status Through Email Notification'){
                    steps{
     
-    mail bcc: '', body: '''PFA status & Jenkins URL "${env.BUILD_NUMBER}" "${env.JOB_NAME}" Thanks,
+    mail bcc: '', body: '''PFA status & Jenkins URL "${env.BUILD_NUMBER}" , "${env.JOB_NAME}" Thanks,
 Sangi Mangi''', cc: 'jnjajenkinsuser@gmail.com', from: '', replyTo: '', subject: "${env.JOB_NAME}" , to: 'jinjajenkinsuser@gmail.com'
         }
         }
