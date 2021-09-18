@@ -33,8 +33,8 @@ pipeline {
             }
             stage('Build Status Through Email Notification'){
             steps{
-            mail bcc: '', body: '''"${env.BUILD_NUMBER}" , "${env.JOB_NAME}" Thanks,
-Sangi Mangi''', cc: 'jinjajenkinsuser@gmail.com', from: '', replyTo: '', subject: "${env.JOB_NAME}" , to: 'jinjajenkinsuser@gmail.com'
+            mail bcc: 'sridhar.vimala@infosys.com', body: '''"${env.BUILD_NUMBER}" Thanks,
+Sangi Mangi''', cc: 'jinjajenkinsuser@gmail.com', from: '', replyTo: '', subject: "${env.JOB_NAME}" , to: ''
         }
         }
         }
