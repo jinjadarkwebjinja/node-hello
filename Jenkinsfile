@@ -14,10 +14,5 @@ pipeline {
                 echo 'scm is done guys!'
             }
         }
-            {
-                {
-                sampletest() 
-            }
-            }
         }
 }
