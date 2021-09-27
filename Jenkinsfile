@@ -14,8 +14,8 @@ pipeline {
                 echo 'scm is done guys!'
             }
         }
-            stage ("Build"){
-                steps{
+            {
+                {
                 sampletest() 
             }
             }
