@@ -15,10 +15,8 @@ pipeline {
             }
         }
             stage ("Build"){
-            steps{
-                echo "Build the app"
-                nodeHello()
-                echo 'Build is done guys!'
+                steps{
+                sampletest() 
             }
             }
               stage("Env Build Number"){
