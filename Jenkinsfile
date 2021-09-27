@@ -19,15 +19,5 @@ pipeline {
                 sampletest() 
             }
             }
-              stage("Env Build Number"){
-            steps{
-             sampletest()  
-            }
-            }
-            stage('Build Status Through Email Notification'){
-            steps{
-                sampletest()
-        }
-        }
         }
 }
